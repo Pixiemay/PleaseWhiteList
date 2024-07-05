@@ -1,0 +1,10 @@
+{
+    "token": "TOKEN",
+    "clientId": "CLIENTID",
+    "guildId": "GUILDID",
+    "roleId": "ROLEID",
+    "command": "COMMAND",
+    "rconIp": "SERVER_IPE",
+    "rconPass": "RCON_PASSWORD",
+    "rconPort": "RCON_PORT"
+}
