@@ -4,7 +4,7 @@
     "guildId": "GUILDID",
     "roleId": "ROLEID",
     "command": "COMMAND",
-    "rconIp": "SERVER_IPE",
+    "rconIp": "SERVER_IP",
     "rconPass": "RCON_PASSWORD",
     "rconPort": "RCON_PORT"
 }
