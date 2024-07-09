@@ -15,15 +15,15 @@ module.exports = {
         ),
     async execute(interaction) {
         const playerNick = interaction.options.getString('nick');
-        if (!interaction.member.roles.cache.has(config.roleId)) {
-            return await interaction.reply({ content: `You can't use this command!`, ephemeral: true });
+        if (!interaction.member.roles.cache.some(role => role.name === 'Whitelist')) {
+            return await interaction.reply({ content: `You haven't role for add to whitelist!`, ephemeral: true });
         }
 
         const rcon = new RCONClient(config.rconIp, config.rconPass, config.rconPort);
 
         rcon.on('authenticated', async () => {
             try {
-                await rcon.executeCommandAsync(`${config.command} ${playerNick}`);
+                await rcon.executeCommandAsync(`${config.rconCommand} ${playerNick}`);
                 console.log(`Player ${playerNick} added!`);
                 await interaction.reply({ content: `Player ${playerNick} added!`, ephemeral: true });
             } catch (err) {
