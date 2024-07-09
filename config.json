@@ -1,8 +1,8 @@
 {
     "token": "TOKEN",
     "clientId": "CLIENTID",
-    "roleName": "ROLEID",
-    "rconCommand": "COMMAND",
+    "roleName": "ROLENAME FOR CHECK ROLE",
+    "rconCommand": "COMMAND FOR ADD TO WHITELIST",
     "rconIp": "SERVER_IP",
     "rconPass": "RCON_PASSWORD",
     "rconPort": "RCON_PORT"
